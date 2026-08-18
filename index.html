@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="世界各国をオリジナルキャラクターとして描く、WORLD COUNTRY公式キャラクター図鑑。">
+  <title>WORLD COUNTRY｜公式キャラクター図鑑</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="WORLD COUNTRY トップへ">WORLD <span>COUNTRY</span></a>
+    <nav aria-label="メインメニュー">
+      <a href="#characters">CHARACTERS</a>
+      <span title="今後追加予定">EXPLORE <small>COMING SOON</small></span>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero start-section" aria-labelledby="main-title">
+      <div class="map-lines" aria-hidden="true"></div>
+      <p class="eyebrow">THE OFFICIAL CHARACTER ARCHIVE · VOL. 01</p>
+      <h1 id="main-title">WORLD<br><em>COUNTRY</em></h1>
+      <p class="catchcopy">世界には、まだ知らない誰かがいる。</p>
+      <p class="introduction">十の国、十の物語。<br>遠い土地の記憶を宿す旅人たちに、会いにいこう。</p>
+      <a class="discover" href="#characters"><span id="collection-range">01—10</span> キャラクターを見る <b>↓</b></a>
+    </section>
+
+    <section class="characters start-section" id="characters" aria-labelledby="characters-title">
+      <header class="section-title">
+        <p>CHARACTER COLLECTION</p>
+        <h2 id="characters-title">世界の住人たち</h2>
+        <span><b id="character-count">10</b> COUNTRIES RECORDED</span>
+      </header>
+      <div class="character-grid" id="character-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="world-archive start-section" id="archive" aria-labelledby="archive-title">
+      <header>
+        <p>04 · ARCHIVE</p>
+        <h2 id="archive-title">世界の記録</h2>
+        <span>旅人を知るたび、世界の別の頁がひらく。</span>
+      </header>
+      <div class="archive-entrances">
+        <a href="#characters"><small>01</small><b>CHARACTERS</b><span>世界の住人たち</span><em>記録を見る →</em></a>
+        <article><small>02</small><b>RELATIONSHIPS</b><span>旅の仲間との関係</span><em>COMING SOON</em></article>
+        <article><small>03</small><b>TRAVEL LOG</b><span>旅の小話</span><em>COMING SOON</em></article>
+        <article><small>04</small><b>WORLD</b><span>世界の記録</span><em>COMING SOON</em></article>
+      </div>
+    </section>
+
+    <section class="growing-world start-section" aria-labelledby="growing-title">
+      <div class="growth-rule" aria-hidden="true"><span></span></div>
+      <div class="growth-copy">
+        <p>03 · THE WORLD KEEPS GROWING</p>
+        <h2 id="growing-title">世界は、完成しない。</h2>
+        <div class="growth-text">
+          <p><b data-country-count>10</b>の国。<br><b data-country-count>10</b>の旅人。</p>
+          <p>けれど、世界にはまだ、<br>名前も知らない誰かがいる。</p>
+          <p>新しい土地へ進むたび、<br>この記録は少しずつ増えていく。</p>
+        </div>
+      </div>
+      <aside class="unknown-record" aria-label="次の記録">
+        <small>NEXT RECORD</small>
+        <strong>UNKNOWN</strong>
+        <span>RECORD No.<b id="next-country-number">011</b></span>
+        <p>次に出会う旅人は、まだ記録されていない。</p>
+      </aside>
+    </section>
+
+    <!-- 各国共通の詳細テンプレート。内容はscript.jsのデータから描画します -->
+    <section class="country-detail" id="country-detail" aria-live="polite" hidden></section>
+  </main>
+
+  <div class="modal" id="character-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel">
+      <button class="modal-close" type="button" data-close-modal aria-label="詳細を閉じる">× <span>閉じる</span></button>
+      <div class="modal-visual" id="modal-visual"></div>
+      <div class="modal-copy">
+        <p class="modal-number" id="modal-number"></p>
+        <p class="modal-local" id="modal-local"></p>
+        <h2 id="modal-name"></h2>
+        <p class="modal-japanese" id="modal-japanese"></p>
+        <div class="ornament" aria-hidden="true">✦</div>
+        <h3 id="modal-title"></h3>
+        <p class="modal-description" id="modal-description"></p>
+        <dl class="profile-list">
+          <div><dt>PERSONALITY</dt><dd id="modal-personality"></dd></div>
+          <div><dt>LIKES</dt><dd id="modal-likes"></dd></div>
+          <div><dt>NOT GOOD AT</dt><dd id="modal-dislikes"></dd></div>
+          <div><dt>LOVABLE FLAW</dt><dd id="modal-weakness"></dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="キャラクター画像拡大表示" hidden>
+    <button type="button" class="lightbox-close" data-close-lightbox aria-label="拡大画像を閉じる">× <span>閉じる</span></button>
+    <button type="button" class="lightbox-backdrop" data-close-lightbox aria-label="拡大画像を閉じる"></button>
+    <img id="lightbox-image" src="" alt="">
+  </div>
+
+  <footer><p>WORLD COUNTRY</p><span>Meet the world, one character at a time.</span><small>© WORLD COUNTRY</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# OSが自動生成する不要ファイル
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Codeのローカル設定
+.vscode/
+
+# 一時ファイル・ログ
+*.tmp
+*.temp
+*.log
+*~
+
