@@ -20,13 +20,16 @@ const characterRecords = [
     details: {
       tagline: "通信・接続・整理・調整を担う、静かな旅人。",
       description: "言葉、道具、人、場所。離れているものの間に細い道をつくる旅人。静かで几帳面。目立つことは好まないが、気づけば必要な準備はいつも終わっている。赤い通信機器には、今日も誰かからの声が届く。",
+      roleTitle: "つながりを整える",
       role: "通信・接続・整理・調整。人と人、場所と場所、情報と情報、古いものと新しいものを、派手ではない方法でつないでいく。WORLD COUNTRYの旅では、混乱した情報や予定を整理し、仲間たちが動ける状態へ整える役割を持つ。",
+      symbolTitle: "赤い通信機器",
       symbol: "レトロな赤い通信機器。昔の電話を思わせる姿をしているが、離れた場所の声や情報をつなぐために長年改良されてきた道具。武器ではない。彼女にとって『離れているものをつなぐ』ための大切な仕事道具。",
       personality: ["静か", "几帳面", "責任感が強い", "観察力が高い", "人の変化によく気づく", "少し頑固"],
       personalityNote: "必要以上に前へ出ないが、誰かが困っていると、いつの間にか必要な準備を終えている。",
       voice: ["「順番に確認しましょう。」", "「それ、戻す場所が違います。」", "「……あとで片付けます。」"],
       likes: ["整った机", "丁寧に修理された古い道具", "静かな朝", "細かな文房具", "規則正しく動く機械", "誰かから届いた手紙", "温かいお茶", "旅先でもらった小物", "予定通りに物事が進むこと"],
       dislikes: ["突然の予定変更", "道具を元の場所へ戻さない人", "大声で急かされること", "整理されていない配線", "説明を最後まで聞かず作業を始める人", "「たぶん大丈夫」という言葉", "忘れ物"],
+      flawTitle: "「念のためです。」",
       weakness: "心配性。問題が起きる前から『もし○○だったら』を考えすぎる。旅行では、予備の電池、予備のコード、予備の筆記具、予備の袋、予備の雨具などを必要以上に持ってくる。本人はいつも『念のためです。』と言う。",
       whyCountry: "日本から着想した、古いものと新しいものの共存、精密なものづくり、整理された仕組み、通信、手仕事、機械、和の布、現代的な道具といった要素を、一人の『つなぐ旅人』として再構成したキャラクター。日本そのものを説明する人物ではなく、日本の文化・技術・美意識から受け取った要素が、衣装や道具、仕事の中へ静かに溶け込んでいる。",
       countryNotes: [
@@ -78,13 +81,16 @@ const characterRecords = [
     details: {
       tagline: "奇術・暗号・言葉遊びで、現実と虚構の境目を半歩だけずらす旅人。",
       description: "カードを一枚めくるたび、確かだったはずの答えが少しだけ揺らぐ。仕掛けなのか、本当に不思議な力なのか、本人は決して説明しない。飄々と笑いながら相手の反応を見つめ、答えの代わりに新しい疑問を残していく。けれど困っている人を見過ごすほど意地悪ではない。助けたことさえ、たぶん偶然だったことにしてしまう。",
+      roleTitle: "境界をずらす",
       role: "境界をずらす。人が当然だと思っていることを、ほんの少し違う角度から見せる。答えを直接渡すのではなく、『本当にそう？』という小さな疑問を残し、見慣れた世界の隣にもう一つの可能性を置く。",
+      symbolTitle: "仕掛けのカード",
       symbol: "仕掛けのカード。一見すると普通のカードだが、見る角度、順番、持つ人、置く場所によって、書かれているものが少し変わって見える。本当に変化しているのか、単なる錯覚なのかは不明。本人に尋ねても、微笑むだけで教えてくれない。",
       personality: ["飄々としている", "頭の回転が速い", "観察好き", "少し皮肉屋", "いたずら好き", "好奇心旺盛", "意外と面倒見がいい", "本心を全部見せない"],
       personalityNote: "答えをすぐには教えず、相手が気づく瞬間を楽しみに待つ。からかわれた側も最後には、呆れながら少し笑ってしまう。",
       voice: ["「さて。どちらでしょう？」", "「私は何もしていませんよ？」", "「……あら。見つかってしまいました。」"],
       likes: ["古いトランプ", "仕掛け箱", "雨音", "古い本", "謎解き", "紅茶", "少し変わったティーカップ", "噂話", "古い劇場", "誰かが驚いた瞬間", "答えが一つではない問題", "意味のないように見える小物"],
       dislikes: ["全部説明すること", "予定通りすぎる旅", "反応してくれない相手", "『結論だけ教えて』と言われること", "仕掛けを途中で説明されること", "カードを勝手に並べ替えられること", "冗談を本気で受け取られること"],
+      flawTitle: "「少しだけ面白い方がいいでしょう？」",
       weakness: "驚かせたくなると我慢できない。真面目な会議中でもカードを一枚だけ入れ替え、誰かの帽子から砂糖の包みを取り出し、JAPANが整えた道具にジョーカーを混ぜる。悪意はない。本人曰く、『少しだけ面白い方がいいでしょう？』。",
       whyCountry: "古い物語と現代の文化、格式と遊び心、文学・演劇・奇術・推理、そして直接言い切らないユーモア。イギリスから受け取ったそれらの要素を、現実と虚構の境を少しだけずらす一人の旅人として組み直した。霧や雨、古い建築、ティータイムは飾りではなく、答えを急がず、会話と想像の余地を楽しむ彼女の時間の中へ静かに溶け込んでいる。",
       countryNotes: [
@@ -157,6 +163,9 @@ const characters = characterRecords.map(character => ({
   },
   details: character.details ? {
     quotes: character.details.quotes || character.details.voice || [],
+    roleTitle: character.details.roleTitle || "旅人の役割",
+    symbolTitle: character.details.symbolTitle || "旅人の象徴",
+    flawTitle: character.details.flawTitle || "愛せる欠点",
     countryNotes: character.details.countryNotes || [],
     relationships: character.details.relationships || [],
     // 旧story形式も読み込み、JAPANの文章を変えず複数話構造へ移行します。
@@ -307,12 +316,12 @@ function showCountryDetail(character) {
     <section class="archive-section profile-section">
       <header><p>01 · PROFILE</p><h2>旅人の記録</h2></header>
       <div class="profile-archive">
-        <article><small>ROLE / 役割</small><h3>つながりを整える</h3><p>${details.role}</p></article>
-        <article><small>SYMBOL / 象徴アイテム</small><h3>赤い通信機器</h3><p>${details.symbol}</p></article>
+        <article><small>ROLE / 役割</small><h3>${details.roleTitle}</h3><p>${details.role}</p></article>
+        <article><small>SYMBOL / 象徴アイテム</small><h3>${details.symbolTitle}</h3><p>${details.symbol}</p></article>
         <article class="wide"><small>PERSONALITY / 性格</small><ul>${tags(details.personality)}</ul><p>${details.personalityNote || ""}</p></article>
         <article><small>LIKES / 好き</small><ul>${tags(details.likes)}</ul></article>
         <article><small>NOT GOOD AT / 苦手</small><ul>${tags(details.dislikes)}</ul></article>
-        <article class="wide flaw"><small>LOVABLE FLAW / 愛せる欠点</small><h3>「念のためです。」</h3><p>${details.weakness}</p></article>
+        <article class="wide flaw"><small>LOVABLE FLAW / 愛せる欠点</small><h3>${details.flawTitle}</h3><p>${details.weakness}</p></article>
       </div>
     </section>
     <section class="archive-section why-section">
