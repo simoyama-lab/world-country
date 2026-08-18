@@ -126,10 +126,70 @@ const characterRecords = [
         ],
         epilogue: "本当かどうかは、最後まで誰にも分からなかった。"
       }],
-      nextCountry: { number: 3, englishName: "MOROCCO", japaneseName: "モロッコ", available: false }
+      nextCountry: { number: 3, englishName: "MOROCCO", japaneseName: "モロッコ", available: true }
     }
   },
-  { number: 3, englishName: "MOROCCO", localName: "المغرب", japaneseName: "モロッコ", title: "光と迷路を読み解く、黄昏の道標職人", image: "イメージ/カントリー/3.モロッコ/キャラクター/1..png" },
+  {
+    number: 3,
+    englishName: "MOROCCO",
+    localName: "المغرب",
+    japaneseName: "モロッコ",
+    title: "光と迷路を読み解く、黄昏の道標職人",
+    image: "イメージ/カントリー/3.モロッコ/キャラクター/1..png",
+    theme: { accent: "#315d78", navy: "#213747", gold: "#b18b4e" },
+    classifications: ["道標職人", "観測者", "記録", "旅路"],
+    details: {
+      tagline: "距離と光を測り、まだ輪郭のない道へ最初の印を置く旅人。",
+      description: "巨大な円環を肩に、道のない場所で立ち止まる。測っているのは、星や方角だけではない。ここから向こうまで何歩かかるのか。今の光なら、どこまで見えるのか。その人が今日歩けるのは、どの道なのか。彼は遠さを数字へ閉じ込めず、進める形へほどいていく。答えを示したあとは、地図の外へ消えるように次の観測地点へ向かう。",
+      roleTitle: "遠さをほどく",
+      role: "遠い場所、まだ見えない道、現在地の分からない人。その間にある距離を測り、最初に進める一歩へ変える。最短の道を決めるのではなく、歩く人の速さ、残された光、風や地面の状態まで読み、今ここから続けられる道へ印を置く。",
+      symbolTitle: "星環測路盤",
+      symbol: "星環測路盤。真鍮の環、細い針、目盛り、記録板が幾重にも重なった円形観測装置。星と影から方角を読み、歩いた距離を静かに刻む。ただし針は、持ち主が現在地を正直に認めるまで動かない。彼にしか読めない小さなずれがあり、同じ場所を測っても毎回ほんの少し違う答えを示す。",
+      personality: ["慎重", "寡黙", "観察が細かい", "数字だけを信じない", "迷う人を急かさない", "道具の手入れが丁寧", "質問が具体的", "話し始めると意外に長い"],
+      personalityNote: "道を教える前に、『どこまでなら歩ける？』と尋ねる。迷うことを失敗とは考えないが、現在地を曖昧にしたまま進むことだけは嫌う。",
+      voice: ["「遠いのではない。まだ測れていないだけだ。」", "「道は一つでなくていい。現在地は一つでなければ困る。」", "「……あと一度だけ測らせてくれ。」"],
+      likes: ["夕暮れ直前の長い影", "書き込みの残る古い地図", "繰り返しの中にある小さな違い", "真鍮のねじ", "屋上の静けさ", "使い込まれた革袋", "正確な目盛り", "旅人から聞く遠回りの話", "計測後の熱い甘い茶", "修理できる道具"],
+      dislikes: ["『だいたい北』という説明", "地図を雑に畳む人", "観測器を勝手に動かされること", "現在地を確かめずに急ぐこと", "目印のない真新しい道", "記録を日付なしで残すこと", "測っている途中で急に話しかけられること"],
+      flawTitle: "「あと一度だけ。」が長い",
+      weakness: "気になるずれを見つけると、目的地より観測を優先してしまう。『あと一度だけ』と言って環を回し、影を測り、ねじを締め直す。その一度が三度になることも多い。誰より正確に到着時刻を計算できるのに、本人が待ち合わせへ遅れる理由は、たいてい途中で見つけた小さなずれである。",
+      whyCountry: "光の角度で表情を変える街、複雑な路地、遠く離れた土地を結んできた道、幾何学と手仕事が重なる工芸。モロッコから受け取ったそれらの要素を、現在地と遠さを読み直す一人の道標職人へ結び直した。彼の青と金、円環の目盛り、記録道具には、星を読む知識と、手で調整しながら道具を使い続ける感覚が静かに残っている。",
+      countryNotes: [
+        { title: "ROUTES", text: "海、山、乾いた大地、街を結ぶ道が、距離の感じ方を変えていくこと。" },
+        { title: "GEOMETRY", text: "同じ形の繰り返しから、終わりのない広がりが生まれる模様。" },
+        { title: "CRAFT", text: "金属、木、革を、手で調整しながら長く使える道具へ仕立てる仕事。" },
+        { title: "LIGHT", text: "強い光と深い影が、時間や方角、場所の輪郭を教えること。" },
+        { title: "CROSSROADS", text: "人、品物、知識、物語が行き交い、別の土地へ運ばれてきた場所。" }
+      ],
+      relationships: [
+        { country: "UNITED KINGDOM", japanese: "イギリス", number: 2, image: "イメージ/カントリー/2.イギリス/キャラクター/1.png", text: "観測記録へ一つだけ偽の手がかりを混ぜる相手。MOROCCOは数字のずれからほぼ必ず見抜くが、嘘の印が思いがけない道を示すことも知っている。腹は立つ。それでも彼女の仕掛けを、観測の外側を見るための小さな訓練として捨てずに保管している。" },
+        { country: "SENEGAL", japanese: "セネガル", number: 8, image: "イメージ/カントリー/8.セネガル/キャラクター/1..png", text: "風と潮路を身体で読むSENEGALとは、道の決め方が正反対。MOROCCOが目盛りを確かめる間に、SENEGALはもう帆を上げている。議論は多いが、動く風と動かない星を重ねたとき、二人は一人では見つけられない道を作る。" },
+        { country: "JAPAN", japanese: "日本", number: 1, image: "イメージ/カントリー/1.日本/キャラクター/1..png", text: "記録の形式と道具の管理について、ほとんど説明なしで通じる相手。ただしJAPANは予定通り先へ進みたいのに、MOROCCOは影のずれを見つけると止まる。互いに正しいため言い争いにはならず、静かな沈黙だけが長くなる。" }
+      ],
+      travelLogs: [{
+        number: 1,
+        title: "あと一度だけ",
+        cast: ["MOROCCO", "INDIA", "JAPAN"],
+        intro: "日が傾き始めたころ、三人は次の宿へ向かう道の分かれ目に立っていた。",
+        lines: [
+          ["MOROCCO", "標石が、一歩ぶん東へずれている。"],
+          ["INDIA", "一歩なら、そのままでいいだろ。"],
+          ["MOROCCO", "一歩のずれは、遠くで道一本ぶんになる。"],
+          ["NARRATION", "MOROCCOは星環測路盤を開き、影と目盛りを合わせ直す。"],
+          ["JAPAN", "出発予定まで、あと三分です。"],
+          ["MOROCCO", "分かっている。あと一度だけ。"],
+          ["NARRATION", "環を回す。針を戻す。もう一度、影を見る。"],
+          ["INDIA", "今ので二度目だぞ。"],
+          ["MOROCCO", "一度目は確認だ。"],
+          ["NARRATION", "標石の下から、小さな真鍮の留め具が見つかった。目盛りの輪から外れた部品だった。"],
+          ["JAPAN", "修理時間を予定へ追加します。"],
+          ["MOROCCO", "助かる。五分で終わる。"],
+          ["INDIA", "それは何回測った五分だ？"]
+        ],
+        epilogue: "宿へ着いたのは計算どおりだった。MOROCCOだけが、入口の影を測るために少し遅れて入ってきた。"
+      }],
+      nextCountry: { number: 4, englishName: "PORTUGAL", japaneseName: "ポルトガル", available: false }
+    }
+  },
   { number: 4, englishName: "PORTUGAL", localName: "Portugal", japaneseName: "ポルトガル", title: "海の向こうへ消えた物語を集める、蒼夜の記憶守", image: "イメージ/カントリー/4.ポルトガル/キャラクター/1.png" },
   { number: 5, englishName: "INDONESIA", localName: "Indonesia", japaneseName: "インドネシア", title: "島々の声を織り合わせる、群島の響紡ぎ", image: "イメージ/カントリー/5.インドネシア/キャラクター/1.png" },
   { number: 6, englishName: "PERU", localName: "Perú", japaneseName: "ペルー", title: "明日の実りを預かる、千種の台所番", image: "イメージ/カントリー/6.ペルー/キャラクター/1..png" },
@@ -298,7 +358,7 @@ function showCountryDetail(character) {
       <p>THE OFFICIAL CHARACTER ARCHIVE</p>
       <span>COUNTRY No.${String(character.number).padStart(3, "0")}</span>
       <h1>${character.englishName}</h1>
-      <strong>${character.localName}</strong>
+      <strong dir="auto">${character.localName}</strong>
     </header>
     <section class="detail-hero">
       <button type="button" class="detail-portrait" data-zoom-image aria-label="${character.japaneseName}の画像を拡大する">
